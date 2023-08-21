@@ -1,0 +1,27 @@
+﻿{
+  "Application": {
+    "OpenVpnLogFile": "testcases/ovpn_status_2_result-3",
+    "ReadOpenVpnLogFileEveryXSeconds": 15,
+    "WhitelistVpnUsers": [ "janoonk" ]
+  },
+  "PushOver": {
+    "Enabled": true,
+    "EndPoint": "https://api.pushover.net/1/messages.json",
+    "ApiToken": "ag8cpgwub6tonogfdoir7nnb9hrfhn",
+    "GroupOrUserKeys": [ "g62hy3o64h3vm6esignzyvy3awrueb" ]
+  },
+  "Logging": {
+    "MinimumLevel": "Verbose",
+    "File": {
+      "Enabled": true,
+      "Path": "Logs/ApplicationLog.txt",
+      "RollingInterval": "Day",
+      "RollOnFileSizeLimit": true,
+      "RestrictedToMinimumLevel": "Verbose"
+    },
+    "Console": {
+      "Enabled": true,
+      "RestrictedToMinimumLevel": "Information"
+    }
+  }
+}

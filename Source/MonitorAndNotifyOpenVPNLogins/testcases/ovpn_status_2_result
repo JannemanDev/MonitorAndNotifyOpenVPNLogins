@@ -1,0 +1,6 @@
+TITLE,OpenVPN 2.3.11 armle-unknown-linux-gnu [SSL (OpenSSL)] [LZO] [EPOLL] [MH] [IPv6] built on Sep 22 2021
+TIME,Thu Aug 10 16:15:26 2023,1691676926
+HEADER,CLIENT_LIST,Common Name,Real Address,Virtual Address,Bytes Received,Bytes Sent,Connected Since,Connected Since (time_t),Username
+HEADER,ROUTING_TABLE,Virtual Address,Common Name,Real Address,Last Ref,Last Ref (time_t)
+GLOBAL_STATS,Max bcast/mcast queue length,0
+END

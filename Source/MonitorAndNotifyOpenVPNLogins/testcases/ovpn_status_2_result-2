@@ -1,0 +1,9 @@
+TITLE,OpenVPN 2.3.11 armle-unknown-linux-gnu [SSL (OpenSSL)] [LZO] [EPOLL] [MH] [IPv6] built on Sep 22 2021
+TIME,Thu Feb 23 10:48:28 2023,1677145708
+HEADER,CLIENT_LIST,Common Name,Real Address,Virtual Address,Bytes Received,Bytes Sent,Connected Since,Connected Since (time_t),Username
+CLIENT_LIST,UNDEF,::ffff:185.112.102.79(10538),,14,54,Thu Feb 23 10:48:18 2023,1677145698,UNDEF
+CLIENT_LIST,UNDEF,::ffff:185.112.102.79(47046),,14,68,Thu Feb 23 10:48:09 2023,1677145689,UNDEF
+CLIENT_LIST,UNDEF,::ffff:185.112.102.79(19868),,14,82,Thu Feb 23 10:47:52 2023,1677145672,UNDEF
+CLIENT_LIST,UNDEF,::ffff:185.112.102.79(12041),,14,82,Thu Feb 23 10:47:43 2023,1677145663,UNDEF
+HEADER,ROUTING_TABLE,Virtual Address,Common Name,Real Address,Last Ref,Last Ref (time_t)
+END
