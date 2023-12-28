@@ -11,7 +11,7 @@ if not exist "%solutionfolder%%projectsubfolder%" (goto error)
 cd /d %solutionfolder%
 
 rem Delete previous Builds folder
-if exist "Builds\%dotnetcore%\" del Builds\%dotnetcore%\%project%-%version%-*-*-%dotnetcore%.rar
+if exist "Builds\%dotnetcore%\" del Builds\%dotnetcore%\%project%-%version%-*-*-%dotnetcore%.zip
 mkdir Builds\%dotnetcore%
 
 rem Delete previous bin folder of project (will get auto created when building)
@@ -31,27 +31,27 @@ if not exist "%projectsubfolder%bin\%release%\%dotnetcore%\publish\" (goto error
 rem Rar all project builds
 cd /d "%solutionfolder%"
 cd %projectsubfolder%bin\%release%\%dotnetcore%\publish\linux-arm\
-"C:\Program Files\WinRAR\rar.exe" a -r ..\..\..\..\..\..\..\Builds\%dotnetcore%\%project%-%version%-linux-arm-%dotnetcore%.rar *.*
+"C:\Program Files\WinRAR\WinRar.exe" a -afzip -m5 -r ..\..\..\..\..\..\..\Builds\%dotnetcore%\%project%-%version%-linux-arm-%dotnetcore%.zip *.*
 
 cd /d "%solutionfolder%"
 cd %projectsubfolder%bin\%release%\%dotnetcore%\publish\linux-arm64\
-"C:\Program Files\WinRAR\rar.exe" a -r ..\..\..\..\..\..\..\Builds\%dotnetcore%\%project%-%version%-linux-arm64-%dotnetcore%.rar *.*
+"C:\Program Files\WinRAR\WinRar.exe" a -afzip -m5 -r ..\..\..\..\..\..\..\Builds\%dotnetcore%\%project%-%version%-linux-arm64-%dotnetcore%.zip *.*
 
 cd /d "%solutionfolder%"
 cd %projectsubfolder%bin\%release%\%dotnetcore%\publish\linux-x64\
-"C:\Program Files\WinRAR\rar.exe" a -r ..\..\..\..\..\..\..\Builds\%dotnetcore%\%project%-%version%-linux-x64-%dotnetcore%.rar *.*
+"C:\Program Files\WinRAR\WinRar.exe" a -afzip -m5 -r ..\..\..\..\..\..\..\Builds\%dotnetcore%\%project%-%version%-linux-x64-%dotnetcore%.zip *.*
 
 cd /d "%solutionfolder%"
 cd %projectsubfolder%bin\%release%\%dotnetcore%\publish\osx-x64\
-"C:\Program Files\WinRAR\rar.exe" a -r ..\..\..\..\..\..\..\Builds\%dotnetcore%\%project%-%version%-osx-x64-%dotnetcore%.rar *.*
+"C:\Program Files\WinRAR\WinRar.exe" a -afzip -m5 -r ..\..\..\..\..\..\..\Builds\%dotnetcore%\%project%-%version%-osx-x64-%dotnetcore%.zip *.*
 
 cd /d "%solutionfolder%"
 cd %projectsubfolder%bin\%release%\%dotnetcore%\publish\win-x64\
-"C:\Program Files\WinRAR\rar.exe" a -r ..\..\..\..\..\..\..\Builds\%dotnetcore%\%project%-%version%-win-x64-%dotnetcore%.rar *.*
+"C:\Program Files\WinRAR\WinRar.exe" a -afzip -m5 -r ..\..\..\..\..\..\..\Builds\%dotnetcore%\%project%-%version%-win-x64-%dotnetcore%.zip *.*
 
 cd /d "%solutionfolder%"
 cd %projectsubfolder%bin\%release%\%dotnetcore%\publish\win-x86\
-"C:\Program Files\WinRAR\rar.exe" a -r ..\..\..\..\..\..\..\Builds\%dotnetcore%\%project%-%version%-win-x86-%dotnetcore%.rar *.*
+"C:\Program Files\WinRAR\WinRar.exe" a -afzip -m5 -r ..\..\..\..\..\..\..\Builds\%dotnetcore%\%project%-%version%-win-x86-%dotnetcore%.zip *.*
 
 cd /d "%solutionfolder%"
 
